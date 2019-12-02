@@ -7,7 +7,7 @@ async function bootstrap() {
 
   const options = new DocumentBuilder()
     .setTitle('MOCK API')
-    .setDescription('The cats API description')
+    .setDescription('Mock data for CMS+SPA setup in Novicell, considered as a data contract.')
     .setSchemes('http', 'https')
     .setVersion('1.0')
     .addTag('api')

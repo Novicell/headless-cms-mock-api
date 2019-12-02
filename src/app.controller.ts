@@ -14,13 +14,13 @@ export class AppController {
   constructor() {}
 
   @Get('/content')
-  @ApiResponse({ status: 200, description: 'The record has been successfully created.', type: Page})
+  @ApiResponse({ status: 200, description: 'Main content for subpage', type: Page})
   getContent(): Observable<Page> {
     return of(content_response).pipe(delay(200));
   }
   
   @Get('/navigation')
-  @ApiResponse({ status: 200, description: 'The record has been successfully created.', type: Navigation})
+  @ApiResponse({ status: 200, description: 'Navigation for the subpage', type: Navigation})
   getNavigation(): Observable<Navigation> {
     return of(navigation_response).pipe(delay(200));
   }
