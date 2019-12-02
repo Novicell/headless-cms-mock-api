@@ -8,6 +8,7 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .setTitle('MOCK API')
     .setDescription('The cats API description')
+    .setSchemes('http', 'https')
     .setVersion('1.0')
     .addTag('api')
     .build();
