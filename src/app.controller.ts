@@ -29,4 +29,9 @@ export class AppController {
   getSettings(): Observable<Settings> {
     return of(settings_response).pipe(delay(200));
   }
+
+  @Get('/headless/dictionary/FetchAll')
+  getDictionary(): Observable<Settings> {
+    return of(settings_response).pipe(delay(200));
+  }
 }
