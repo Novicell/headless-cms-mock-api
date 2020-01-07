@@ -70,7 +70,7 @@ export class PageMeta {
   @ApiModelProperty()
   template: string; // FrontPage, TextPage ..
   @ApiModelProperty()
-  culture?: Nullable<string>; // to handle different languages
+  culture?: Nullable<Culture>; // to handle different languages
 }
 
 export class PageSeo {
@@ -174,4 +174,9 @@ export class GridEditor {
   column: number;
   @ApiModelProperty()
   viewModel: any;
+}
+
+export class Culture {
+  @ApiModelProperty()
+  lang?: string;
 }

@@ -5,7 +5,10 @@ export const content_response: Page = {
        statusCode: 200,
        redirectUrl: null,
        path: "-1,1063,1064",
-       template: "frontPage"
+       template: "frontPage",
+       culture: {
+          lang: 'dk'
+       }
     },
     seo: {
        title: "Forside",
