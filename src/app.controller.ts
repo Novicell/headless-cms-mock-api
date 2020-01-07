@@ -12,7 +12,7 @@ import { delay } from 'rxjs/operators';
 @Controller('/api')
 export class AppController {
   constructor() {}
-
+  
   @Get('/content')
   @ApiResponse({ status: 200, description: 'Main content for subpage', type: Page})
   getContent(): Observable<Page> {

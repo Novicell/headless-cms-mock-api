@@ -69,6 +69,8 @@ export class PageMeta {
   path?: string; // Used for setting the navigation active - e.g. -1, 2, 203
   @ApiModelProperty()
   template: string; // FrontPage, TextPage ..
+  @ApiModelProperty()
+  culture: string; // to handle different languages
 }
 
 export class PageSeo {
