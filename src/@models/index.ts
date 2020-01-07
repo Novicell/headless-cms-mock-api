@@ -70,7 +70,7 @@ export class PageMeta {
   @ApiModelProperty()
   template: string; // FrontPage, TextPage ..
   @ApiModelProperty()
-  culture: Nullable<string>; // to handle different languages
+  culture?: Nullable<string>; // to handle different languages
 }
 
 export class PageSeo {
